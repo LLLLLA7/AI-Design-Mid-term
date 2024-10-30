@@ -22,7 +22,10 @@
 - 环境配置完成后，将训练语料放入data文件夹的trian_wanmei.json中
 - ![avatar](sample/2.png)
 - 使用cache文件夹中的make_vocab_wanmei.py生成待训练小说完美世界的词表。
+
+``` bash
 sh make_vocab.sh
+```
 - 词表的大小可以通过make_vocab.sh中的vocab_size控制，注意确保词表大小与config文件夹中模型配置文件的vocab_size大小一致。
 - ![avatar](sample/3.png)
 - ![avatar](sample/4.png)
@@ -38,7 +41,10 @@ sh make_vocab.sh
 
 - 前置准备完成后，下面开始训练
 使用train.sh脚本，即可进行训练
-sh train.sh
+
+``` bash
+ sh train.sh
+```
 - ![avatar](sample/5.png)
 - --raw表示对数据进行预处理，即生成tokenized后的训练文件。
 训练使用的模型配置文件为
@@ -53,7 +59,11 @@ sh train.sh
 
 - 训练完成后，使用generate.sh脚本生成小说文字
 - ![avatar](sample/8.png)
-- sh generate.sh即可生成10段小说文字，结果保存在sample.txt中
+
+``` bash
+ sh generate.sh
+```
+- 即可生成10段小说文字，结果保存在sample.txt中
 - ![avatar](sample/9.png)
 - ![avatar](sample/10.png)
 - ![avatar](sample/11.png)
